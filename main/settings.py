@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
+import dj_database_url
 from pathlib import Path
 from datetime import timedelta
 from django.conf import settings
@@ -98,14 +99,9 @@ WSGI_APPLICATION = 'main.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': "django.db.backends.postgresql",
-		'NAME' : config('DB_NAME'),
-		'USER' : config('DB_USER'),
-		'PASSWORD' : config('DB_PASSWORD'),
-		'HOST' : config('DB_HOST'), #si tienes otra dirección host debes remplazar esta
-		'PORT' : '' #si lo dejas vacío tomara el puerto por default
-    }
+     'default': dj_database_url.config(
+       default="postgress"
+    )
 }
 
 
