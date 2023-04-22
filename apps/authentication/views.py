@@ -13,7 +13,7 @@ from random import randrange
 @api_view(['POST'])
 def CreateUser(request):
         if (request.method == 'POST'):
-                #try:
+                try:
                     data = request.data
                     username =  data['username']  
                     password =  data['password']
@@ -33,11 +33,11 @@ def CreateUser(request):
                         )
                     return Response(status = status.HTTP_201_CREATED)
                 
-                #except IntegrityError:
-                    #return Response(status = status.HTTP_403_FORBIDDEN)
+                except IntegrityError:
+                    return Response(status = status.HTTP_403_FORBIDDEN)
 
-                #except:
-                    #return Response(status = status.HTTP_400_BAD_REQUEST)   
+                except:
+                    return Response(status = status.HTTP_400_BAD_REQUEST)   
                 
         else:
                 Response(status = status.HTTP_404_NOT_FOUND)
