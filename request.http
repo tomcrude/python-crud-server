@@ -1,0 +1,52 @@
+###
+GET http://localhost:4000/userReviews/40/40/ HTTP/1.0
+
+###
+GET http://localhost:4000/reviews/ HTTP/1.0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyMTI2MzM4LCJpYXQiOjE2ODIxMjYwMzgsImp0aSI6IjhjN2Y1ZTA3ZmIxNjRmYTRiZTY4ZTgzZTdlYjVmNjU3IiwidXNlcl9pZCI6NjR9.EGDMS45OA447C4VEqFHujChp4MmpmPxidK5MVjlfh7U
+
+###
+POST http://localhost:4000/token/ HTTP/1.0
+Content-type: application/json
+
+{
+    "username": "test12",
+    "password": "del12"
+}
+
+
+
+
+###
+DELETE http://localhost:4000/review/4/ HTTP/1.0
+Content-type: application/json
+
+{
+    "token": "aa?da232b8063"
+}
+###
+POST http://localhost:4000/api-token-auth/ 
+Content-type: application/json
+
+{"username":"admin" 
+"password":"whatever"}
+
+###
+POST http://localhost:4000/createUser/
+Content-type: application/json
+
+{
+    "username": "aa?d32b",
+    "password": "pa4ssass",
+    "email": "angohot@mail.com"
+}
+
+###
+
+POST http://localhost:4000/logIn/
+Content-type: application/json
+
+{
+    "username": "aa?da232b2",
+    "password": "pa4ssass"
+}
