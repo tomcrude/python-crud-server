@@ -26,7 +26,7 @@ DEBUG = 'render' not in os.environ
 
 APPEND_SLASH=False
 
-ALLOWED_HOSTS = ["https://vue-crud-client.vercel.app"]
+ALLOWED_HOSTS = ["https://vue-crud-client-dnixg3kwy-tomcrude.vercel.app"]
 
 # Application definition
 
@@ -71,7 +71,7 @@ SIMPLE_JWT= {'ACCESS_TOKEN_LIFETIME': timedelta(days=1)}
 
 CORS_ORIGIN_ALLOW_ALL = False
 
-CORS_ORIGIN_WHITELIST =["https://vue-crud-client.vercel.app"]
+CORS_ORIGIN_WHITELIST =["https://vue-crud-client-dnixg3kwy-tomcrude.vercel.app"]
 
 ROOT_URLCONF = 'main.urls'
 
