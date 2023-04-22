@@ -154,7 +154,7 @@ class UserReviews(APIView):
 class test(APIView):
             def get(self, request, *args, **kwargs):
                 try: 
-                    Response({"ddd":"esta"})
+                    Response(status=status.HTTP_200_OK)
                 except:
                   return Response(status=status.HTTP_400_BAD_REQUEST)
 
