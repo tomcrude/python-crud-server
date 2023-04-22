@@ -151,12 +151,7 @@ class UserReviews(APIView):
                 except:
                   return Response(status=status.HTTP_400_BAD_REQUEST)
 
-class test(APIView):
-            def get(self, request, *args, **kwargs):
-                try: 
-                    Response(status=status.HTTP_200_OK)
-                except:
-                  return Response(status=status.HTTP_400_BAD_REQUEST)
+
 
           
 
