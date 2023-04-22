@@ -6,7 +6,6 @@ from .models import Reviews
 from django.contrib.auth.models import User
 from django.db.models import Q
 from . import util
-from rest_framework.authentication import SessionAuthentication, BasicAuthentication
 from rest_framework.permissions import IsAuthenticated
 
 class Review(APIView):
@@ -150,6 +149,7 @@ class UserReviews(APIView):
                         return Response(serial.data)
                 except:
                   return Response(status=status.HTTP_400_BAD_REQUEST)
+                
 
 
 
