@@ -8,6 +8,7 @@ from . import views
 urlpatterns = [
     path('userReviews/<str:id>/<str:user>/', views.UserReviews.as_view(), name="userReviews"),
     path('reviews/', views.AllReviews.as_view(), name="allReviews"),
+    path('test/', views.test.as_view(), name="test"),
     path('review/<str:id>/', views.Review.as_view(), name="review")
 ]
 if settings.DEBUG:
