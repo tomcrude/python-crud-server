@@ -71,7 +71,7 @@ SIMPLE_JWT= {'ACCESS_TOKEN_LIFETIME': timedelta(days=1)}
 
 CORS_ORIGIN_ALLOW_ALL = False
 
-CORS_ORIGIN_WHITELIST =["https://vue-crud-client-dnixg3kwy-tomcrude.vercel.app"]
+CORS_ORIGIN_WHITELIST =["https://vue-crud-client.vercel.app"]
 
 ROOT_URLCONF = 'main.urls'
 
